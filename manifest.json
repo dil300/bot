@@ -1,0 +1,26 @@
+{
+   "background": {
+      "page": "background.html"
+   },
+   "browser_action": {
+      "default_icon": "icon-34.png",
+      "default_popup": "popup.html"
+   },
+   "content_scripts": [ {
+      "js": [ "content.bundle.js" ],
+      "matches": [ "https://eu.iqoption.com/traderoom", "https://iqoption.com/*", "https://tr-iqoption.com/*", "https://id-iqoption.com/*", "http://iqtrading.as/*" ]
+   } ],
+   "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+   "description": "Extension",
+   "icons": {
+      "128": "icon-128.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjNRzjnSrtGiubeZZ/HUXk6NTumMU8uvlQVK4AFscAWuMJBgQOgF8MIfwvv2Ii1ofp2aMSwY3N9kJXQH2vE4uff+LkqVdxnzLr5grWfn7H/Mmn5QZcuDGfKMs0YZYu+A8R26VwkjevunxAliZll/9MkwFDpbayYlHf2Qw2CoeUxEvOyWNyf1iKHBErEvYxAI55cyaREvpU8xJPLCgAwrUpI6jJ5SjkFGjtTEY1dCRqlgtqyWpOxPkD+Dj7JTW7qPekbzMhWJV7buZ8xZnf73NegRDBW59XG7/1Z885KLfi2aAvpRtG+sS4vpyRF7CNcb2rm45Yw9Z5j8Jr34NoMUusQIDAQAB",
+   "manifest_version": 2,
+   "name": "IQ Trading Bot",
+   "options_page": "options.html",
+   "permissions": [ "cookies", "https://*/*", "http://*/*", "tabs", "webRequest", "webRequestBlocking", "storage" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.0.1",
+   "web_accessible_resources": [ "manifest.json" ]
+}
